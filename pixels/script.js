@@ -35,8 +35,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
 document.querySelectorAll("[data-carousel]").forEach((carousel, carouselIndex) => {
-  const slides = Array.from(carousel.querySelectorAll(".example-slide"));
+  const slides = Array.from(carousel.querySelectorAll(".service-slide"));
 
   if (slides.length < 2) {
     return;
