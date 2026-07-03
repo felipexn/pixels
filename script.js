@@ -1,21 +1,3 @@
-const filterButtons = document.querySelectorAll(".filter-button");
-const projectCards = document.querySelectorAll(".project-card");
-
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
-
-    filterButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-
-    projectCards.forEach((card) => {
-      const status = card.dataset.status || "";
-      const shouldShow = filter === "todos" || status === filter;
-      card.classList.toggle("hidden", !shouldShow);
-    });
-  });
-});
-
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", (event) => {
     const target = document.querySelector(anchor.getAttribute("href"));

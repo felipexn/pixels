@@ -3,202 +3,153 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>XNMAB | Portfólio de sites</title>
+    <title>Luiz Felipe | Portfólio</title>
     <meta
       name="description"
-      content="Portfólio de sites estáticos publicados em xnmab.tech, com projetos organizados por rotas como /pixels."
+      content="Portfólio de Luiz Felipe Souza Vasconcelos, engenheiro da computação com atuação em automação, IoT, dados e integração de sistemas."
     />
     <meta name="theme-color" content="#111827" />
-    <meta property="og:title" content="XNMAB | Portfólio de sites" />
+    <meta property="og:title" content="Luiz Felipe | Portfólio" />
     <meta
       property="og:description"
-      content="Uma vitrine organizada para sites estáticos, landing pages e projetos publicados em xnmab.tech."
+      content="Automação, IoT, dados e sistemas integrados para resolver problemas reais."
     />
     <link rel="canonical" href="https://xnmab.tech/" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header" aria-label="Topo do site">
-      <a class="brand" href="#inicio" aria-label="XNMAB">
-        <span class="brand-mark">XN</span>
-        <span>XNMAB</span>
+      <a class="brand" href="#inicio" aria-label="Luiz Felipe">
+        <span class="brand-mark">LF</span>
+        <span>Luiz Felipe</span>
       </a>
 
       <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
-        <a href="#estrutura">Estrutura</a>
         <a href="#contato">Contato</a>
       </nav>
 
-      <a class="header-action" href="#projetos">Portfólio</a>
+      <a class="header-action" href="mailto:xnlipe@gmail.com">E-mail</a>
     </header>
 
     <main id="inicio">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">xnmab.tech</p>
-          <h1>Um endereço principal para organizar vários sites estáticos.</h1>
+          <p class="eyebrow">Engenharia da Computação</p>
+          <h1>Automação, IoT e sistemas conectados para problemas reais.</h1>
           <p>
-            A página inicial funciona como portfólio e cada projeto ganha uma
-            rota própria, como <strong>/pixels</strong>, mantendo tudo simples
-            de publicar, acessar e apresentar.
+            Sou Luiz Felipe Souza Vasconcelos, engenheiro da computação em
+            Marabá-PA. Trabalho com integração entre software, hardware, dados
+            e processos, criando soluções práticas para operação e tomada de
+            decisão.
           </p>
           <div class="hero-actions" aria-label="Ações principais">
             <a class="btn btn-primary" href="#projetos">Ver projetos</a>
-            <a class="btn btn-secondary" href="/pixels/">Abrir Pixel</a>
+            <a class="btn btn-secondary" href="#contato">Falar comigo</a>
           </div>
         </div>
 
-        <div class="route-map" aria-label="Mapa de rotas do portfólio">
-          <div class="route-root">
-            <span>principal</span>
-            <strong>xnmab.tech</strong>
+        <aside class="profile-card" aria-label="Resumo profissional">
+          <span class="profile-initials">LF</span>
+          <h2>Luiz Felipe Souza Vasconcelos</h2>
+          <p>
+            Automação de processos, sistemas embarcados, IoT, APIs e análise de
+            dados.
+          </p>
+          <div class="profile-tags" aria-label="Tecnologias">
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>ESP32</span>
+            <span>LoRa</span>
+            <span>SQL</span>
+            <span>n8n</span>
           </div>
-          <div class="route-list">
-            <a href="/pixels/">
-              <span>/pixels</span>
-              <strong>Pixel Comunicação Visual</strong>
-            </a>
-            <div>
-              <span>/proximo</span>
-              <strong>Novo site estático</strong>
-            </div>
-            <div>
-              <span>/cliente</span>
-              <strong>Landing page dedicada</strong>
-            </div>
-          </div>
-        </div>
+        </aside>
       </section>
 
-      <section class="status-strip" aria-label="Resumo do portfólio">
-        <div>
-          <strong>01</strong>
-          <span>site publicado</span>
+      <section id="sobre" class="about section-band">
+        <div class="section-heading">
+          <p class="eyebrow">Sobre</p>
+          <h2>Perfil técnico direto ao ponto.</h2>
         </div>
-        <div>
-          <strong>/pixels</strong>
-          <span>primeira rota ativa</span>
-        </div>
-        <div>
-          <strong>static</strong>
-          <span>HTML, CSS e JS</span>
+
+        <div class="about-grid">
+          <article>
+            <span>01</span>
+            <h3>Automação</h3>
+            <p>
+              Workflows, webhooks, integração de APIs e redução de tarefas
+              manuais com processos confiáveis.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>IoT e embarcados</h3>
+            <p>
+              ESP32, LoRa, sensores, telemetria e controle remoto integrando
+              hardware e software.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Dados</h3>
+            <p>
+              Scripts, SQL, Pandas, ETL e relatórios para acompanhar
+              indicadores operacionais.
+            </p>
+          </article>
         </div>
       </section>
 
       <section id="projetos" class="projects section-band">
         <div class="section-heading">
-          <p class="eyebrow">Portfólio</p>
-          <h2>Sites disponíveis</h2>
-          <p>
-            Cada card aponta para um site independente, organizado em sua
-            própria pasta e pronto para crescer sem misturar arquivos.
-          </p>
+          <p class="eyebrow">Projetos</p>
+          <h2>Alguns trabalhos e estudos.</h2>
         </div>
 
-        <div class="filter-bar" aria-label="Filtrar projetos">
-          <button class="filter-button active" type="button" data-filter="todos">
-            Todos
-          </button>
-          <button class="filter-button" type="button" data-filter="publicado">
-            Publicados
-          </button>
-          <button class="filter-button" type="button" data-filter="modelo">
-            Modelos
-          </button>
-        </div>
-
-        <div class="project-grid" aria-live="polite">
-          <article class="project-card" data-status="publicado">
-            <div class="project-media">
-              <img
-                src="pixels/assets/logo.png"
-                alt="Logo da Pixel Comunicação Visual"
-              />
-            </div>
-            <div class="project-body">
-              <span class="project-status">Publicado</span>
-              <h3>Pixel Comunicação Visual</h3>
-              <p>
-                Landing page para serviços de comunicação visual em Marabá-PA,
-                com catálogo, filtros e contato direto pelo WhatsApp.
-              </p>
-              <div class="project-meta">
-                <span>/pixels</span>
-                <span>Site comercial</span>
-              </div>
-              <a class="project-link" href="/pixels/">Abrir site</a>
-            </div>
-          </article>
-
-          <article class="project-card project-card-muted" data-status="modelo">
-            <div class="project-placeholder" aria-hidden="true">
-              <span>02</span>
-            </div>
-            <div class="project-body">
-              <span class="project-status">Modelo</span>
-              <h3>Próximo site</h3>
-              <p>
-                Espaço preparado para o próximo projeto estático, mantendo o
-                mesmo padrão de rota e publicação.
-              </p>
-              <div class="project-meta">
-                <span>/proximo</span>
-                <span>Em preparação</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card project-card-muted" data-status="modelo">
-            <div class="project-placeholder accent" aria-hidden="true">
-              <span>03</span>
-            </div>
-            <div class="project-body">
-              <span class="project-status">Modelo</span>
-              <h3>Landing dedicada</h3>
-              <p>
-                Estrutura para páginas de negócios, produtos, eventos ou
-                campanhas com endereço curto dentro do domínio principal.
-              </p>
-              <div class="project-meta">
-                <span>/cliente</span>
-                <span>Template base</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="estrutura" class="structure section-band">
-        <div class="section-heading compact">
-          <p class="eyebrow">Estrutura</p>
-          <h2>Como os sites ficam organizados</h2>
-        </div>
-
-        <div class="structure-list">
-          <article>
-            <span>01</span>
-            <h3>Raiz como portfólio</h3>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-kicker">ESP32 + LoRa</span>
+            <h3>Sistema de irrigação automatizado</h3>
             <p>
-              A página principal apresenta os projetos e serve como vitrine do
-              domínio.
+              Monitoramento e acionamento remoto de válvulas usando sensores,
+              comunicação LoRa e integração hardware/software.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/felipexn/acionarValvulaComESP32LORA"
+              target="_blank"
+              rel="noopener"
+            >
+              Ver repositório
+            </a>
+          </article>
+
+          <article class="project-card">
+            <span class="project-kicker">ESP32 + Interface Web</span>
+            <h3>Controle remoto de iluminação</h3>
+            <p>
+              Controlador embarcado para gerenciamento remoto de iluminação,
+              com comandos via interface web e uso em ambiente real.
             </p>
           </article>
-          <article>
-            <span>02</span>
-            <h3>Uma pasta por site</h3>
+
+          <article class="project-card">
+            <span class="project-kicker">Python + Dados</span>
+            <h3>Análise de produção e eficiência energética</h3>
             <p>
-              Cada cliente ou projeto fica isolado em uma rota própria, sem
-              conflito entre estilos, scripts e imagens.
+              Limpeza, agregação e análise de dados para gerar métricas e
+              apoiar decisões operacionais.
             </p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Publicação simples</h3>
-            <p>
-              Novos sites entram como novas pastas e aparecem no portfólio com
-              um card dedicado.
-            </p>
+            <a
+              class="project-link"
+              href="https://github.com/felipexn/Analise-Producao-e-Eficiencia-Energetica-em-py"
+              target="_blank"
+              rel="noopener"
+            >
+              Ver repositório
+            </a>
           </article>
         </div>
       </section>
@@ -206,22 +157,24 @@
       <section id="contato" class="contact section-band">
         <div>
           <p class="eyebrow">Contato</p>
-          <h2>Pronto para o próximo site estático.</h2>
+          <h2>Vamos conversar sobre tecnologia aplicada.</h2>
+          <p>
+            Marabá-PA ·
+            <a href="mailto:xnlipe@gmail.com">xnlipe@gmail.com</a> ·
+            <a href="https://github.com/felipexn" target="_blank" rel="noopener">
+              github.com/felipexn
+            </a>
+          </p>
         </div>
-        <a
-          class="btn btn-primary"
-          href="https://wa.me/5594991606192?text=Quero%20criar%20um%20novo%20site%20est%C3%A1tico"
-          target="_blank"
-          rel="noopener"
-        >
-          Chamar no WhatsApp
+        <a class="btn btn-primary" href="mailto:xnlipe@gmail.com">
+          Enviar e-mail
         </a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>XNMAB</span>
-      <span>Portfólio de sites estáticos</span>
+      <span>Luiz Felipe</span>
+      <span>Automação · IoT · Dados</span>
     </footer>
 
     <script src="script.js"></script>
