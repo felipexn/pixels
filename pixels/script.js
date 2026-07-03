@@ -35,3 +35,20 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+document.querySelectorAll("[data-carousel]").forEach((carousel, carouselIndex) => {
+  const slides = Array.from(carousel.querySelectorAll(".example-slide"));
+
+  if (slides.length < 2) {
+    return;
+  }
+
+  let activeIndex = slides.findIndex((slide) => slide.classList.contains("active"));
+  activeIndex = activeIndex >= 0 ? activeIndex : 0;
+  slides[activeIndex].classList.add("active");
+
+  window.setInterval(() => {
+    slides[activeIndex].classList.remove("active");
+    activeIndex = (activeIndex + 1) % slides.length;
+    slides[activeIndex].classList.add("active");
+  }, 2600 + carouselIndex * 450);
+});
