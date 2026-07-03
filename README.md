@@ -4,9 +4,8 @@ Página principal simples para apresentação profissional de Luiz Felipe Souza 
 
 ## Conteúdo
 
-- apresentação profissional
-- áreas de atuação
-- projetos selecionados
-- links de contato
+- resumo profissional curto
+- links para GitHub, LinkedIn e e-mail
+- principais habilidades técnicas
 
 O site da Pixel continua preservado em `pixels/`.
