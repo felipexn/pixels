@@ -1,5 +1,12 @@
+const phoneNumber = "5594991606192";
+
+document.querySelectorAll("[data-message]").forEach((link) => {
+  const message = link.getAttribute("data-message");
+  link.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+});
+
 const filterButtons = document.querySelectorAll(".filter-button");
-const projectCards = document.querySelectorAll(".project-card");
+const cards = document.querySelectorAll(".service-card");
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -8,9 +15,9 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
 
-    projectCards.forEach((card) => {
-      const status = card.dataset.status || "";
-      const shouldShow = filter === "todos" || status === filter;
+    cards.forEach((card) => {
+      const categories = card.dataset.category || "";
+      const shouldShow = filter === "todos" || categories.includes(filter);
       card.classList.toggle("hidden", !shouldShow);
     });
   });
