@@ -602,6 +602,13 @@ body.modal-open {
     linear-gradient(135deg, #06164a, #0b78a9);
 }
 
+.media-pix {
+  background:
+    radial-gradient(circle at 74% 34%, rgba(245, 200, 75, 0.95) 0 34px, transparent 35px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0 12px, transparent 12px 28px),
+    linear-gradient(135deg, #063f72, #18a6d1);
+}
+
 .media-mdf {
   background:
     linear-gradient(90deg, rgba(245, 200, 75, 0.85) 0 16px, transparent 16px),
@@ -643,6 +650,13 @@ body.modal-open {
     radial-gradient(circle at 68% 34%, rgba(245, 200, 75, 0.9) 0 28px, transparent 29px),
     radial-gradient(circle at 78% 52%, rgba(24, 166, 209, 0.9) 0 22px, transparent 23px),
     linear-gradient(135deg, #051033, #08245f);
+}
+
+.media-laser {
+  background:
+    linear-gradient(120deg, transparent 0 42%, rgba(245, 200, 75, 0.88) 42% 48%, transparent 48%),
+    radial-gradient(circle at 76% 28%, rgba(255, 255, 255, 0.26) 0 42px, transparent 43px),
+    linear-gradient(135deg, #06164a, #0b78a9);
 }
 
 .service-body {
