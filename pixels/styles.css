@@ -394,6 +394,7 @@ h1 {
 
 .service-media.has-images {
   background: #06164a;
+  cursor: zoom-in;
 }
 
 .service-slide {
@@ -430,6 +431,152 @@ h1 {
   object-fit: cover;
   object-position: center;
   background: #06164a;
+}
+
+.service-media.has-images:focus-visible {
+  outline: 3px solid var(--yellow-400);
+  outline-offset: 3px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 999px;
+  background: rgba(6, 22, 74, 0.68);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.86;
+  transform: translateY(-50%) scale(0.94);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
+  backdrop-filter: blur(10px);
+}
+
+.carousel-control:hover,
+.carousel-control:focus-visible {
+  opacity: 1;
+  background: rgba(6, 22, 74, 0.88);
+  transform: translateY(-50%) scale(1);
+}
+
+.service-media.has-images:hover .carousel-control,
+.service-media.has-images:focus-within .carousel-control {
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 12px;
+}
+
+.carousel-control-next {
+  right: 12px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.image-modal[hidden] {
+  display: none;
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+}
+
+.image-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: rgba(2, 9, 31, 0.82);
+  cursor: zoom-out;
+  backdrop-filter: blur(12px);
+}
+
+.image-modal-panel {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: min(1080px, 94vw);
+  height: min(82vh, 760px);
+}
+
+.image-modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  background: #06164a;
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.44);
+}
+
+.image-modal-close,
+.image-modal-control {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(6, 22, 74, 0.72);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  backdrop-filter: blur(12px);
+}
+
+.image-modal-close:hover,
+.image-modal-control:hover,
+.image-modal-close:focus-visible,
+.image-modal-control:focus-visible {
+  background: rgba(24, 136, 180, 0.92);
+}
+
+.image-modal-close {
+  top: -16px;
+  right: -16px;
+  font-size: 1.7rem;
+}
+
+.image-modal-prev {
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-modal-next {
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 
@@ -677,6 +824,43 @@ h1 {
 
   .site-footer {
     flex-direction: column;
+  }
+
+  .carousel-control {
+    width: 38px;
+    height: 38px;
+    opacity: 1;
+    font-size: 1.7rem;
+  }
+
+  .carousel-control-prev {
+    left: 8px;
+  }
+
+  .carousel-control-next {
+    right: 8px;
+  }
+
+  .image-modal {
+    padding: 14px;
+  }
+
+  .image-modal-panel {
+    width: 94vw;
+    height: 78vh;
+  }
+
+  .image-modal-close {
+    top: 8px;
+    right: 8px;
+  }
+
+  .image-modal-prev {
+    left: 8px;
+  }
+
+  .image-modal-next {
+    right: 8px;
   }
 
   .floating-whatsapp {
