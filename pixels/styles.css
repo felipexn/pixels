@@ -519,13 +519,16 @@ body.modal-open {
   z-index: 1;
   display: grid;
   place-items: center;
-  width: min(1080px, 94vw);
-  height: min(82vh, 760px);
+  max-width: 92vw;
+  max-height: 82vh;
 }
 
 .image-modal-image {
-  width: 100%;
-  height: 100%;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(860px, 92vw);
+  max-height: 78vh;
   object-fit: contain;
   object-position: center;
   border-radius: 8px;
@@ -846,8 +849,13 @@ body.modal-open {
   }
 
   .image-modal-panel {
-    width: 94vw;
-    height: 78vh;
+    max-width: 94vw;
+    max-height: 76vh;
+  }
+
+  .image-modal-image {
+    max-width: 94vw;
+    max-height: 74vh;
   }
 
   .image-modal-close {
